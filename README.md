@@ -2,7 +2,7 @@
 
 ### Hi there 👋
 
-![image](https://user-images.githubusercontent.com/773341/166484276-0bb1a3ae-1b78-4bbb-9f6a-ac2eee3e0338.png)
+![image](https://user-images.githubusercontent.com/773341/166486082-33f19def-f57d-48ca-b433-06887a605433.png)
 
 My Name is Obed Murillo I am a passionate about software development, I love doing development since discovery to Go Live, I have been doing this for 16 years now!
 I am an expert on eCommerece, worked on many industries doing B2C and B2B implementations from scratch, migrations and implementing new features on top of existing implementations.
