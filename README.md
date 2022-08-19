@@ -8,7 +8,7 @@ My Name is Obed Murillo I am a passionate about software development, I love doi
 I am an expert on eCommerece implementations, worked on many industries doing B2C and B2B implementations from scratch, migrations and implementing new features on top of existing implementations and doing integrations with different systems from paymentgateways to single sing on providers.
 
 - 🔭 I’m currently working at Oracle
-- 🌱 I’m currently learning Cloud Computing
+- 🌱 I’m currently learning Cloud Computing and Oracle Integration Cloud platform
 - 👯 I’m looking to collaborate on eCommerce projects
 - 💬 Ask me about Oracle Commerce
 - 📫 How to reach me: obedmhg@gmail.com
