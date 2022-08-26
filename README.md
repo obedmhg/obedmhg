@@ -12,6 +12,7 @@ I am an expert on eCommerece implementations, worked on many industries doing B2
 - 👯 I’m looking to collaborate on eCommerce projects
 - 💬 Ask me about Oracle Commerce
 - 📫 How to reach me: obedmhg@gmail.com
+- 📝 Personal Blog:  https://obed33.blogspot.com/ 
 - ⚡ Fun fact: Podcast host 🎤 on From Zero to N
 
 <p align="center">
