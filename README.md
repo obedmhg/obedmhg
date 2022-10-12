@@ -13,7 +13,7 @@ I am an expert on eCommerece implementations, worked on many industries doing B2
 - 💬 Ask me about Oracle Commerce
 - 📫 How to reach me: obedmhg@gmail.com
 - 📝 Personal Blog:  https://obed33.blogspot.com/ 
-- ⚡ Fun fact: Podcast host 🎤 on From Zero to N https://www.fromzeroton.com.mx/ 
+- ⚡ Fun fact: Podcast host 🎤 on From Zero to N https://www.fromzeroton.com.mx/ listen at https://open.spotify.com/show/1BeAW7hI9MSdloLx7mnQUQ?si=9d426df2fada42fb&nd=1
 
 <p align="center">
   <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=obedmhg&show_icons=true&count_private=true&bg_color=00000000">
