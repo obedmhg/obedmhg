@@ -10,7 +10,7 @@ I am an expert on eCommerece implementations, worked on many industries doing B2
 - 🔭 I’m currently working at ChangeCx
 - 🌱 I’m currently learning CommerceTools, Marketplacer, Algolia, Cloud Computing and more!
 - 👯 I’m looking to collaborate on eCommerce projects
-- 💬 Ask me about Oracle Commerce
+- 💬 Ask me about e-Commerce
 - 📫 How to reach me: obedmhg@gmail.com
 - 📝 Personal Blog:  https://obed33.blogspot.com/ 
 - ⚡ Fun fact: Podcast host 🎤 on From Zero to N https://www.fromzeroton.com.mx/ listen at https://open.spotify.com/show/1BeAW7hI9MSdloLx7mnQUQ?si=9d426df2fada42fb&nd=1
