@@ -11,7 +11,7 @@ Throughout my career, I have become an expert in eCommerce implementations. I ha
 By combining my extensive knowledge with a strong commitment to delivering high-quality results, I consistently strive to exceed expectations and drive success in each project I undertake.
 
 - 🔭 I’m currently working at ChangeCx
-- 🌱 I’m currently learning CommerceTools, Marketplacer, Algolia, Cloud Computing and more!
+- 🌱 I’m currently learning Shopify, CommerceTools, Marketplacer, Algolia, Cloud Computing and more!
 - 👯 I’m looking to collaborate on eCommerce projects
 - 💬 Ask me about e-Commerce
 - 📫 How to reach me: obedmhg@gmail.com
