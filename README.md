@@ -14,7 +14,7 @@ By combining my extensive knowledge with a strong commitment to delivering high-
 - 🌱 I’m currently learning Shopify, CommerceTools (CoCo and CoFe), Marketplacer, Algolia, Cloud Computing and more!
 - 👯 I’m looking to collaborate on eCommerce projects
 - 💬 Ask me about e-Commerce
-- 📫 How to reach me: obedmhg@gmail.com
+- 📫 How to reach me: obedmhg@gmail.com or at https://www.linkedin.com/in/jesus-obed-murillo-a84bb7a/
 - 📝 Personal Blog:  https://obed33.blogspot.com/ 
 - ⚡ Fun fact: Podcast host 🎤 on From Zero to N https://www.fromzeroton.com.mx/ listen at https://open.spotify.com/show/1BeAW7hI9MSdloLx7mnQUQ?si=9d426df2fada42fb&nd=1
 
