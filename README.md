@@ -10,8 +10,8 @@ Throughout my career, I have become an expert in eCommerce implementations. I ha
 
 By combining my extensive knowledge with a strong commitment to delivering high-quality results, I consistently strive to exceed expectations and drive success in each project I undertake.
 
-- 🔭 I’m currently working at ChangeCx
-- 🌱 I’m currently learning Shopify, CommerceTools (CoCo and CoFe), Marketplacer, Algolia, GCP and more!
+- 🔭 I’m currently working at KogniVera
+- 🌱 I’m currently learning Shopify, CommerceTools (CoCo and CoFe), Mirakl, VTex, Google OR Tools, GCP and more!
 - 👯 I’m looking to collaborate on eCommerce projects
 - 💬 Ask me about e-Commerce
 - 📫 How to reach me: obedmhg@gmail.com or at https://www.linkedin.com/in/jesus-obed-murillo-a84bb7a/
