@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -111,7 +111,7 @@
             name: "Obed Murillo",
             title: "Director of Technology",
             experience: "17+ years in eCommerce & Digital Solutions",
-            image: "/profile.png"
+            image: "https://obedmurillo.netlify.app/profile.png"
           },
           about: {
             summary: [
@@ -279,15 +279,25 @@
             const themeToggleDarkIcon = document.getElementById('theme-toggle-dark');
             const themeToggleLightIcon = document.getElementById('theme-toggle-light');
 
-            // Set the initial theme based on user preference or system preference
-            if (localStorage.getItem('color-theme') === 'dark' || 
-                (!localStorage.getItem('color-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark');
-                themeToggleLightIcon.classList.remove('hidden');
-            } else {
-                document.documentElement.classList.remove('dark');
-                themeToggleDarkIcon.classList.remove('hidden');
+            // Set theme based on time of day
+            function setThemeByTime() {
+                const currentHour = new Date().getHours();
+                // Consider day time between 6am and 6pm
+                const isDayTime = currentHour >= 6 && currentHour < 18;
+                
+                if (isDayTime) {
+                    document.documentElement.classList.remove('dark');
+                    themeToggleDarkIcon.classList.remove('hidden');
+                    themeToggleLightIcon.classList.add('hidden');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    themeToggleDarkIcon.classList.add('hidden');
+                    themeToggleLightIcon.classList.remove('hidden');
+                }
             }
+
+            // Initial theme setting based on time
+            setThemeByTime();
 
             // Toggle theme when button is clicked
             themeToggleBtn.addEventListener('click', function() {
@@ -296,13 +306,7 @@
                 themeToggleLightIcon.classList.toggle('hidden');
                 
                 // Toggle dark class on html element
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
+                document.documentElement.classList.toggle('dark');
             });
         }
 
@@ -422,4 +426,3 @@
     </script>
 </body>
 </html>
-
