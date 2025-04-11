@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obed Murillo - Professional Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        /* Force circular image with !important */
+        .profile-image {
+            width: 120px !important;
+            height: 120px !important;
+            border-radius: 50% !important;
+            object-fit: cover !important;
+            border: 4px solid white !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+        }
+        
+        .dark .profile-image {
+            border-color: #1e1e1e !important;
+        }
+
+        /* Timeline styles */
+        .timeline-container {
+            position: relative;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            background-color: #e5e7eb;
+            height: 100%;
+        }
+        
+        .dark .timeline-line {
+            background-color: #374151;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 24px;
+            background-color: #3b82f6;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        
+        .dark .timeline-dot {
+            background-color: #3b82f6;
+        }
+        
+        .timeline-content {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            margin-bottom: 64px;
+        }
+        
+        .timeline-left {
+            width: 50%;
+            padding-right: 32px;
+            text-align: right;
+        }
+        
+        .timeline-right {
+            width: 50%;
+            padding-left: 32px;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            background-color: #e5e7eb;
+            padding: 8px;
+            border-radius: 9999px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 100;
+        }
+
+        .dark .theme-toggle {
+            background-color: #4b5563;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <svg id="theme-toggle-light" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+        <svg id="theme-toggle-dark" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+    </button>
+    <div id="resume-container" class="container mx-auto px-4 py-12 max-w-6xl"></div>
+
+    <script>
+        const resumeData = {
+          header: {
+            name: "Obed Murillo",
+            title: "Director of Technology",
+            experience: "17+ years in eCommerce & Digital Solutions",
+            image: "/profile.png"
+          },
+          about: {
+            summary: [
+              "Senior Software Architect with over 17 years of experience specializing in e-commerce solutions.",
+              "Currently Director of Technology at KogniVera, leading LATAM initiatives and driving innovation.",
+              "Expert in Java, Oracle Commerce, commercetools, and cloud architectures."
+            ]
+          },
+          skills: [
+            "Java", "Oracle Commerce", "ATG", "commercetools",
+            "GCP", "AWS", "Docker", "Jenkins", "React.js",
+            "RESTful APIs", "Cloud Architecture", "CI/CD",
+            "Leadership", "Innovation", "LATAM Strategy",
+            "Team Coordination", "Process Optimization", "Client Success",
+            "Composable Commerce", "Cloud Integration", "E-Commerce"
+          ],
+          experience: [
+            {
+              title: "Director of Technology - LATAM",
+              company: "KogniVera",
+              dates: "Apr 2025 - Present",
+              location: "Mexico · Remote",
+              duration: "1 mo",
+              description: [
+                "Collaborate with partners, clients, and internal teams to drive innovation across LATAM.",
+                "Deliver tailored technology solutions that empower client success.",
+                "Build lasting partnerships through a fully invested and collaborative approach."
+              ],
+              skills: ["Leadership", "Innovation", "LATAM Strategy"]
+            },
+            {
+              title: "Director of Technology",
+              company: "Icreon",
+              dates: "Jul 2024 - Apr 2025",
+              location: "Remote",
+              duration: "10 mos",
+              description: [
+                "Ensure timely and high-quality eCommerce project delivery.",
+                "Coordinate offshore and onshore teams for seamless deployment.",
+                "Drive technological innovation and process optimization."
+              ],
+              skills: ["Team Coordination", "Process Optimization", "Client Success"]
+            },
+            {
+              title: "Senior Commerce Architect Omni Channel",
+              company: "changeCX",
+              dates: "Nov 2022 - Jul 2024",
+              location: "Chihuahua, Mexico",
+              duration: "1 yr 9 mos",
+              description: [
+                "Led teams implementing commercetools Composable Commerce and Frontend.",
+                "Designed end-to-end cloud and on-prem integration for large retailers.",
+                "Ensured quality delivery by managing both onshore and offshore teams."
+              ],
+              skills: ["commercetools", "Composable Commerce", "Cloud Integration"]
+            },
+            {
+              title: "Solutions Architect",
+              company: "Oracle",
+              dates: "Apr 2021 - Nov 2022",
+              location: "Chihuahua, Mexico",
+              duration: "1 yr 8 mos",
+              description: [
+                "Designed and supported eCommerce solutions for Oracle Commerce clients."
+              ],
+              skills: ["Oracle Commerce", "E-Commerce", "RESTful WebServices", "React.js", "Java", "ATG"]
+            },
+            {
+              title: "Senior Principal Consultant",
+              company: "Oracle",
+              dates: "Mar 2018 - Apr 2021",
+              location: "Chihuahua Area, Mexico",
+              duration: "3 yrs 2 mos",
+              description: [
+                "Provided services to Oracle Commerce and OCC clients."
+              ],
+              skills: ["Oracle Commerce", "E-Commerce", "RESTful WebServices", "React.js", "Java", "ATG"]
+            },
+            {
+              title: "Solutions Architect (Contractor)",
+              company: "e2x Limited",
+              dates: "Dec 2016 - Mar 2018",
+              location: "Chihuahua Area, Mexico",
+              duration: "1 yr 4 mos",
+              description: [
+                "Developed a B2B platform from discovery to production.",
+                "Integrated internal tools from design through testing."
+              ],
+              skills: ["Oracle Commerce", "E-Commerce", "RESTful WebServices", "Java", "ATG"]
+            },
+            {
+              title: "Solutions Architect",
+              company: "NU Technology Inc",
+              dates: "Nov 2016 - Mar 2018",
+              location: "Chihuahua Area, Mexico",
+              duration: "1 yr 5 mos",
+              description: [
+                "Implemented scalable eCommerce solutions using Oracle Commerce and CSA Model."
+              ],
+              skills: ["Oracle Commerce", "E-Commerce", "RESTful WebServices", "Java", "ATG"]
+            },
+            {
+              title: "ATG Technical Architect",
+              company: "AutoZone",
+              dates: "Feb 2016 - Nov 2016",
+              location: "Chihuahua Area, Mexico",
+              duration: "10 mos",
+              description: [
+                "Supported and developed AutoZone's eCommerce platform."
+              ],
+              skills: ["Oracle Commerce", "E-Commerce", "RESTful WebServices", "Java", "ATG"]
+            },
+            {
+              title: "ATG Lead Developer",
+              company: "Speed Commerce",
+              dates: "Mar 2012 - Feb 2016",
+              location: "Chihuahua Area, Mexico",
+              duration: "4 yrs",
+              description: [
+                "Led ATG development team in project delivery and support.",
+                "Worked on Toys R Us UK, Poland and Justice projects with custom ATG implementations."
+              ],
+              skills: ["Oracle Commerce", "Java", "ATG"]
+            },
+            {
+              title: "ATG Developer",
+              company: "Speed Commerce",
+              dates: "Mar 2012 - Feb 2014",
+              location: "Chihuahua Area, Mexico",
+              duration: "2 yrs",
+              description: [
+                "Supported and developed ATG eCommerce applications."
+              ],
+              skills: ["Oracle Commerce", "Java", "ATG"]
+            }
+          ],
+          podcast: {
+            title: "From Zero to N",
+            dates: "Aug 2021 - Present",
+            duration: "3 yrs 9 mos",
+            description: "Podcast host on From Zero to N, talking with interesting people about their life experiences, passions, recommendations, and more."
+          },
+          certifications: [
+            {
+              name: "SCJP (Sun Certified Java Programmer)",
+              institution: "Java 1.4 Platform",
+              date: "Certification"
+            },
+            {
+              name: "Oracle Commerce Specialist",
+              institution: "ATG Implementation",
+              date: "Certification"
+            }
+          ],
+          contact: {
+            location: "Chihuahua, Mexico",
+            email: "obedmhg@gmail.com",
+            phone: "+52 614 182 5638"
+          }
+        };
+
+        // Theme management
+        function setupThemeToggle() {
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeToggleDarkIcon = document.getElementById('theme-toggle-dark');
+            const themeToggleLightIcon = document.getElementById('theme-toggle-light');
+
+            // Set the initial theme based on user preference or system preference
+            if (localStorage.getItem('color-theme') === 'dark' || 
+                (!localStorage.getItem('color-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+                themeToggleLightIcon.classList.remove('hidden');
+            } else {
+                document.documentElement.classList.remove('dark');
+                themeToggleDarkIcon.classList.remove('hidden');
+            }
+
+            // Toggle theme when button is clicked
+            themeToggleBtn.addEventListener('click', function() {
+                // Toggle icons
+                themeToggleDarkIcon.classList.toggle('hidden');
+                themeToggleLightIcon.classList.toggle('hidden');
+                
+                // Toggle dark class on html element
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            });
+        }
+
+        function renderResume() {
+            const container = document.getElementById('resume-container');
+            
+            // Header with circular profile image - simplified approach
+            container.innerHTML = `
+                <div class="flex flex-col sm:flex-row items-center sm:items-start mb-12">
+                    <img src="${resumeData.header.image}" alt="Profile Photo" class="profile-image mb-4 sm:mb-0 sm:mr-8" />
+                    <div class="text-center sm:text-left">
+                        <h1 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-2">${resumeData.header.name}</h1>
+                        <p class="text-2xl text-blue-600 dark:text-blue-400 font-semibold">${resumeData.header.title}</p>
+                        <p class="text-gray-600 dark:text-gray-400 mt-2">${resumeData.header.experience}</p>
+                    </div>
+                </div>
+            `;
+
+            // About Section
+            container.innerHTML += `
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 border-b-2 border-blue-500 dark:border-blue-400 pb-2">Professional Summary</h2>
+                    <div class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-4">
+                        ${resumeData.about.summary.map(p => `<p>${p}</p>`).join('')}
+                    </div>
+                </section>
+            `;
+
+            // Skills Grid
+            container.innerHTML += `
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 border-b-2 border-blue-500 dark:border-blue-400 pb-2">Technical Skills</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        ${resumeData.skills.map(skill => `
+                            <div class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded text-center">${skill}</div>
+                        `).join('')}
+                    </div>
+                </section>
+            `;
+
+            // Fixed Experience Timeline with improved alignment
+            container.innerHTML += `
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-8 border-b-2 border-blue-500 dark:border-blue-400 pb-2">Professional Experience</h2>
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+                        ${resumeData.experience.map((exp, index) => `
+                            <div class="timeline-content">
+                                <div class="timeline-dot" style="top: 24px;"></div>
+                                <div class="timeline-left">
+                                    <h3 class="font-semibold text-gray-800 dark:text-gray-200">${exp.title}</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">${exp.company}</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-500">${exp.dates}</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-500">${exp.location}</p>
+                                </div>
+                                <div class="timeline-right">
+                                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+                                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4">
+                                            ${exp.description.map(d => `<li>${d}</li>`).join('')}
+                                        </ul>
+                                        <div class="flex flex-wrap gap-2">
+                                            ${exp.skills.map(s => `
+                                                <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm px-2 py-1 rounded">${s}</span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </section>
+            `;
+
+            // Podcast & Certifications
+            container.innerHTML += `
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <section>
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 border-b-2 border-blue-500 dark:border-blue-400 pb-2">Podcast</h2>
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">${resumeData.podcast.title}</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">${resumeData.podcast.dates} (${resumeData.podcast.duration})</p>
+                            <p class="text-gray-600 dark:text-gray-300">${resumeData.podcast.description}</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 border-b-2 border-blue-500 dark:border-blue-400 pb-2">Certifications</h2>
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm space-y-4">
+                            ${resumeData.certifications.map(cert => `
+                                <div class="border-l-4 border-blue-500 dark:border-blue-400 pl-4">
+                                    <p class="text-gray-800 dark:text-gray-200 font-medium">${cert.name}</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm">${cert.institution}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </section>
+                </div>
+            `;
+
+            // Footer
+            container.innerHTML += `
+                <div class="mt-12 text-center text-gray-500 dark:text-gray-400 text-sm">
+                    <p class="mb-2">Open to consulting opportunities and technical leadership roles</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+                        <span>📍 ${resumeData.contact.location}</span>
+                        <span>✉️ ${resumeData.contact.email}</span>
+                        <span>📱 ${resumeData.contact.phone}</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupThemeToggle();
+            renderResume();
+        });
+    </script>
+</body>
+</html>
+
