@@ -4,13 +4,14 @@
 
 ![image](https://user-images.githubusercontent.com/773341/197629514-44d68c0a-a6c9-486e-af58-ee873eb636fb.png)
 
-My name is Obed Murillo, and I am deeply passionate about software development. Over the past 17 years, I have dedicated myself to the craft, finding immense joy in every aspect of the development process, from discovery to going live.
+My name is Obed Murillo, and I am deeply passionate about software development. Over the past 20 years, I have dedicated myself to the craft, finding immense joy in every aspect of the development process, from discovery to going live.
 
 Throughout my career, I have become an expert in eCommerce implementations. I have had the privilege of working across various industries, successfully executing both B2C and B2B implementations from the ground up. Additionally, I have been involved in seamless migrations and the integration of new features into existing implementations. These experiences have allowed me to work with a diverse range of systems, including payment gateways and single sign-on providers.
 
 By combining my extensive knowledge with a strong commitment to delivering high-quality results, I consistently strive to exceed expectations and drive success in each project I undertake.
 
 - 🔭 I’m currently working at KogniVera
+- 🔬 I'm currently creating the AI software development framework aka ASDF at Kognivera
 - 🌱 I’m currently learning Shopify, CommerceTools (CoCo and CoFe), Mirakl, VTex, Google OR Tools, GCP and LLMs, serverless, microservices, k8, Contentstack, elasticSearch, ollama, bolt and more.
 - 👯 I’m looking to collaborate on eCommerce projects
 - 💬 Ask me about e-Commerce
