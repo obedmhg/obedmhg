@@ -12,7 +12,7 @@ By combining my extensive knowledge with a strong commitment to delivering high-
 
 - 🔭 I’m currently working at KogniVera
 - 🔬 I'm currently creating the AI software development framework aka ASDF at Kognivera
-- 🌱 I’m currently learning Shopify, CommerceTools (CoCo and CoFe), Mirakl, VTex, Google OR Tools, GCP and LLMs, serverless, microservices, k8, Contentstack, elasticSearch, ollama, bolt and more.
+- 🌱 I’m currently learning Agentic Coding, AI tools, Shopify, CommerceTools (CoCo and CoFe), Mirakl, VTex, Google OR Tools, GCP and LLMs, serverless, microservices, k8, Contentstack, elasticSearch, ollama, bolt and more.
 - 👯 I’m looking to collaborate on eCommerce projects
 - 💬 Ask me about e-Commerce
 - 📫 How to reach me: obedmhg@gmail.com or at https://www.linkedin.com/in/jesus-obed-murillo-a84bb7a/
