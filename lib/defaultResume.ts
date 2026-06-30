@@ -5,11 +5,11 @@ export const defaultResume: ResumeData = {
     name: 'Obed Murillo',
     title: 'Director of Technology',
     org: 'KogniVera',
-    experience: '17+ years in eCommerce & Digital Solutions',
+    experience: '20+ years in eCommerce & Digital Solutions',
   },
   about: {
     summary: [
-      'Senior Software Architect with over 17 years of experience specializing in e-commerce solutions.',
+      'Senior Software Architect with over 20 years of experience specializing in e-commerce solutions.',
       'Currently Director of Technology at KogniVera, leading LATAM initiatives and driving innovation.',
       'Expert in Java, Oracle Commerce, commercetools, and cloud architectures.',
     ],
@@ -29,10 +29,11 @@ export const defaultResume: ResumeData = {
       duration: '1 mo',
       description: [
         'Collaborate with partners, clients, and internal teams to drive innovation across LATAM.',
+        'Creating ASDF, an AI Software Development Framework, to be adopted across the org and to help clients adopt AI-driven development.',
         'Deliver tailored technology solutions that empower client success.',
         'Build lasting partnerships through a fully invested and collaborative approach.',
       ],
-      skills: ['Leadership', 'Innovation', 'LATAM Strategy'],
+      skills: ['Leadership', 'Innovation', 'LATAM Strategy', 'AI Development'],
     },
     {
       title: 'Director of Technology',
