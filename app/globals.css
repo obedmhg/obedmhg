@@ -1,0 +1,27 @@
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;}
+
+/* Home page CTA — styled to sit under the terminal resume */
+.rb-home{position:relative;background:#0A0E14;}
+.rb-cta-wrap{
+  position:relative;z-index:1;
+  max-width:1060px;margin:0 auto;padding:0 22px 80px;
+}
+.rb-cta{
+  border:1px solid #283442;border-radius:10px;
+  background:linear-gradient(180deg,#10161F,#0D131B);
+  padding:22px 24px;display:flex;flex-wrap:wrap;align-items:center;
+  justify-content:space-between;gap:14px;
+}
+.rb-cta-text{color:#9FB0C0;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:14px;}
+.rb-cta-text b{color:#E7EEF5;font-weight:500;}
+.rb-cta-link{
+  color:#0A0E14;background:#74C99A;border-radius:6px;
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13.5px;font-weight:700;
+  padding:10px 16px;text-decoration:none;white-space:nowrap;
+}
+.rb-cta-link:hover{background:#8fd9b1;}
+@media (max-width:760px){
+  .rb-cta-wrap{background-size:32px 32px;}
+}

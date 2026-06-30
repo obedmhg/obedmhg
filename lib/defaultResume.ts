@@ -1,0 +1,148 @@
+import type { ResumeData } from './types';
+
+export const defaultResume: ResumeData = {
+  header: {
+    name: 'Obed Murillo',
+    title: 'Director of Technology',
+    org: 'KogniVera',
+    experience: '17+ years in eCommerce & Digital Solutions',
+  },
+  about: {
+    summary: [
+      'Senior Software Architect with over 17 years of experience specializing in e-commerce solutions.',
+      'Currently Director of Technology at KogniVera, leading LATAM initiatives and driving innovation.',
+      'Expert in Java, Oracle Commerce, commercetools, and cloud architectures.',
+    ],
+  },
+  skills: [
+    'Java', 'Oracle Commerce', 'ATG', 'commercetools', 'GCP', 'AWS', 'Docker', 'Jenkins',
+    'React.js', 'RESTful APIs', 'Cloud Architecture', 'CI/CD', 'Leadership', 'Innovation',
+    'LATAM Strategy', 'Team Coordination', 'Process Optimization', 'Client Success',
+    'Composable Commerce', 'Cloud Integration', 'E-Commerce',
+  ],
+  experience: [
+    {
+      title: 'Director of Technology - LATAM',
+      company: 'KogniVera',
+      dates: 'Apr 2025 - Present',
+      location: 'Mexico · Remote',
+      duration: '1 mo',
+      description: [
+        'Collaborate with partners, clients, and internal teams to drive innovation across LATAM.',
+        'Deliver tailored technology solutions that empower client success.',
+        'Build lasting partnerships through a fully invested and collaborative approach.',
+      ],
+      skills: ['Leadership', 'Innovation', 'LATAM Strategy'],
+    },
+    {
+      title: 'Director of Technology',
+      company: 'Icreon',
+      dates: 'Jul 2024 - Apr 2025',
+      location: 'Remote',
+      duration: '10 mos',
+      description: [
+        'Ensure timely and high-quality eCommerce project delivery.',
+        'Coordinate offshore and onshore teams for seamless deployment.',
+        'Drive technological innovation and process optimization.',
+      ],
+      skills: ['Team Coordination', 'Process Optimization', 'Client Success'],
+    },
+    {
+      title: 'Senior Commerce Architect Omni Channel',
+      company: 'changeCX',
+      dates: 'Nov 2022 - Jul 2024',
+      location: 'Chihuahua, Mexico',
+      duration: '1 yr 9 mos',
+      description: [
+        'Led teams implementing commercetools Composable Commerce and Frontend.',
+        'Designed end-to-end cloud and on-prem integration for large retailers.',
+        'Ensured quality delivery by managing both onshore and offshore teams.',
+      ],
+      skills: ['commercetools', 'Composable Commerce', 'Cloud Integration'],
+    },
+    {
+      title: 'Solutions Architect',
+      company: 'Oracle',
+      dates: 'Apr 2021 - Nov 2022',
+      location: 'Chihuahua, Mexico',
+      duration: '1 yr 8 mos',
+      description: ['Designed and supported eCommerce solutions for Oracle Commerce clients.'],
+      skills: ['Oracle Commerce', 'E-Commerce', 'RESTful WebServices', 'React.js', 'Java', 'ATG'],
+    },
+    {
+      title: 'Senior Principal Consultant',
+      company: 'Oracle',
+      dates: 'Mar 2018 - Apr 2021',
+      location: 'Chihuahua Area, Mexico',
+      duration: '3 yrs 2 mos',
+      description: ['Provided services to Oracle Commerce and OCC clients.'],
+      skills: ['Oracle Commerce', 'E-Commerce', 'RESTful WebServices', 'React.js', 'Java', 'ATG'],
+    },
+    {
+      title: 'Solutions Architect (Contractor)',
+      company: 'e2x Limited',
+      dates: 'Dec 2016 - Mar 2018',
+      location: 'Chihuahua Area, Mexico',
+      duration: '1 yr 4 mos',
+      description: [
+        'Developed a B2B platform from discovery to production.',
+        'Integrated internal tools from design through testing.',
+      ],
+      skills: ['Oracle Commerce', 'E-Commerce', 'RESTful WebServices', 'Java', 'ATG'],
+    },
+    {
+      title: 'Solutions Architect',
+      company: 'NU Technology Inc',
+      dates: 'Nov 2016 - Mar 2018',
+      location: 'Chihuahua Area, Mexico',
+      duration: '1 yr 5 mos',
+      description: ['Implemented scalable eCommerce solutions using Oracle Commerce and CSA Model.'],
+      skills: ['Oracle Commerce', 'E-Commerce', 'RESTful WebServices', 'Java', 'ATG'],
+    },
+    {
+      title: 'ATG Technical Architect',
+      company: 'AutoZone',
+      dates: 'Feb 2016 - Nov 2016',
+      location: 'Chihuahua Area, Mexico',
+      duration: '10 mos',
+      description: ["Supported and developed AutoZone's eCommerce platform."],
+      skills: ['Oracle Commerce', 'E-Commerce', 'RESTful WebServices', 'Java', 'ATG'],
+    },
+    {
+      title: 'ATG Lead Developer',
+      company: 'Speed Commerce',
+      dates: 'Mar 2012 - Feb 2016',
+      location: 'Chihuahua Area, Mexico',
+      duration: '4 yrs',
+      description: [
+        'Led ATG development team in project delivery and support.',
+        'Worked on Toys R Us UK, Poland and Justice projects with custom ATG implementations.',
+      ],
+      skills: ['Oracle Commerce', 'Java', 'ATG'],
+    },
+    {
+      title: 'ATG Developer',
+      company: 'Speed Commerce',
+      dates: 'Mar 2012 - Feb 2014',
+      location: 'Chihuahua Area, Mexico',
+      duration: '2 yrs',
+      description: ['Supported and developed ATG eCommerce applications.'],
+      skills: ['Oracle Commerce', 'Java', 'ATG'],
+    },
+  ],
+  highlight: {
+    title: 'From Zero to N',
+    meta: 'Aug 2021 - Present · 3 yrs 9 mos · live',
+    description:
+      'Podcast host on From Zero to N, talking with interesting people about their life experiences, passions, recommendations, and more.',
+  },
+  certifications: [
+    { name: 'SCJP (Sun Certified Java Programmer)', institution: 'Java 1.4 Platform', date: 'Certification' },
+    { name: 'Oracle Commerce Specialist', institution: 'ATG Implementation', date: 'Certification' },
+  ],
+  contact: {
+    location: 'Chihuahua, Mexico',
+    email: 'obedmhg@gmail.com',
+    phone: '+52 614 182 5638',
+  },
+};
